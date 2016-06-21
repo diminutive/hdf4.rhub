@@ -7,9 +7,9 @@
 #' @export
 #' @importFrom rgdal GDAL.open GDAL.close
 #' @examples
-#' geotiff()
-geotiff <- function() {
-  fpath <- system.file("extdata", "float64.tif", package = "gdal.rhub")
+#' hdf4()
+hdf4<- function() {
+  fpath <- system.file("extdata", "hdifftst2.hdf", package = "hdf4.rhub")
   con <- try(rgdal::GDAL.open(fpath))
   retclass <- as.character(class(con))
   if (!inherits(con, "try-error")) rgdal::GDAL.close(con)
