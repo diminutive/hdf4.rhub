@@ -1,0 +1,14 @@
+Package: hdf4.rhub
+Type: Package
+Title: Test for ability to read HDF4 via GDAL
+Version: 0.1.0
+Authors@R: person("Michael D.","Sumner", role = c("aut", "cre"), email = "mdsumner@gmail.com")
+Description: Installs an example file and attempts to read it.
+Imports:
+    rgdal
+License: GPL-3
+LazyData: TRUE
+Suggests:
+    testthat
+SystemRequirements: gdal-bin libhdf4-dev
+RoxygenNote: 5.0.1
